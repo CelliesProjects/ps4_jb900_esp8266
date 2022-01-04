@@ -11,7 +11,9 @@ void setup() {
     Serial.begin(115200);
     delay(500);
 
-    Serial.println("\n\nESP8266 PS4 9.00 jailbreak");
+    Serial.println("\n\n");
+
+    Serial.println(WIFISSID);
 
     if (!SPIFFS.begin()) {
         Serial.println("SPIFFS Init failed. System halted");
@@ -35,14 +37,11 @@ void setup() {
         request->send(404);
     });
 
-    DefaultHeaders::Instance().addHeader("Access-Control-Allow-Origin", "*");
-
     server.begin();
 
     Serial.printf("\n\n1. Connect your PS4 to '%s' WiFi access point.\n", WIFISSID);
-    Serial.print("2. Browse to '");
-    Serial.print(WiFi.softAPIP().toString());
-    Serial.println("' to jailbreak your PS4.");
+    Serial.printf("2. Browse to '%s' to jailbreak your PS4.", WiFi.softAPIP().toString());
+    Serial.println();
 
     digitalWrite(LED_BUILTIN, LOW);
 }
