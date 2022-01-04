@@ -9,7 +9,7 @@ The files were retrieved at `Januari 3 2022` at commit [ebdcc62](https://github.
 
 1.  A ESP8266 with at least 8MB flash memory. A suitable board is for example the [WEMOS D1 mini Pro](https://www.wemos.cc/en/latest/d1/d1_mini_pro.html ).
 2.  Arduino IDE, capable of compiling [ESP8266 nonos](https://github.com/esp8266/Arduino) sketches and the [arduino-esp8266fs-plugin](https://github.com/esp8266/arduino-esp8266fs-plugin/releases) installed on your system.
-3.  The magic USB stick flashed with [exfathax.img](exfathax.img).
+3.  The magic USB stick flashed with `exfathax.img`.
 
 ### How to use
 
