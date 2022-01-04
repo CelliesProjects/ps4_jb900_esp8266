@@ -21,3 +21,6 @@ The files were retrieved at `Januari 3 2022` at commit [ebdcc62](https://github.
 5.  Connect the PS4 to the `ESP8266 PS4 9.00 jailbreak` WiFi access point.
 5.  Browse to `192.168.4.1` and choose a payload.
 6.  Follow the on-screen intructions.
+
+### Credits go to
+theflow, ChendoChap, Specter, Znullptr, sleirsgoevy and GamerHack (and a lot of others!)
