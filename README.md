@@ -5,7 +5,9 @@ This is a local copy of https://github.com/GamerHack/ps4jb900 to jailbreak your 
 
 The files were retrieved at `January 3 2022` at commit [ebdcc62](https://github.com/GamerHack/ps4jb900/tree/ebdcc62f7625b633a740f29d90e1e1c97ee2548a).
 
-Payloads are updated to https://github.com/ChendoChap/pOOBs4/commit/886f4a07d0793ea6ee945ba064c6056e3af0231c
+### Changes
+
+- 1.0.1 Payloads are updated to commit [886f4a0](https://github.com/ChendoChap/pOOBs4/commit/886f4a07d0793ea6ee945ba064c6056e3af0231c) from https://github.com/ChendoChap/pOOBs4
 
 ### You will need
 
