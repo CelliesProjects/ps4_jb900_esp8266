@@ -5,6 +5,8 @@ This is a local copy of https://github.com/GamerHack/ps4jb900 to jailbreak your 
 
 The files were retrieved at `January 3 2022` at commit [ebdcc62](https://github.com/GamerHack/ps4jb900/tree/ebdcc62f7625b633a740f29d90e1e1c97ee2548a).
 
+Payloads are updated to https://github.com/ChendoChap/pOOBs4/commit/886f4a07d0793ea6ee945ba064c6056e3af0231c
+
 ### You will need
 
 1.  A ESP8266 with at least 8MB flash memory. A suitable board is for example the [WEMOS D1 mini Pro](https://www.wemos.cc/en/latest/d1/d1_mini_pro.html ).
