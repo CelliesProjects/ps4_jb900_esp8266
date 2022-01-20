@@ -3,7 +3,7 @@ Jailbreak PS4 FW9.00 for ESP8266
 
 This is a local copy of https://github.com/GamerHack/ps4jb900 to jailbreak your PS4 without needing an internet connection.
 
-The files were retrieved at `Januari 3 2022` at commit [ebdcc62](https://github.com/GamerHack/ps4jb900/tree/ebdcc62f7625b633a740f29d90e1e1c97ee2548a).
+The files were retrieved at `January 3 2022` at commit [ebdcc62](https://github.com/GamerHack/ps4jb900/tree/ebdcc62f7625b633a740f29d90e1e1c97ee2548a).
 
 ### You will need
 
