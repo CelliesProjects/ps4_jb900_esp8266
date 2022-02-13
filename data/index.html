@@ -1,58 +1,7 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest"><head>
-<title>PS4 9.00 FW Host v1.1 by GamerHack - ESP8266 port by Cellie</title>
-<style>
-html, body {
-background-size: 100%;
-background-repeat: no-repeat;
-background-color: #24272b;
-color: white;
-text-align: center;
-margin: 0px;
-overflow: hidden;
-}
-h1 {
-text-shadow: 0.1em 0.1em 0.2em black;
-font-size: 25px;
-text-align: center;
-color: white;
-}
-.btn {
-background-color: #003263;
-color: white;
-width: 260px;
-height: 49px;
-padding-bottom: 5px;
-text-align: center;
-font-size: 20px;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 8px;
-margin-right: 8px;
-border-bottom-width: 0px;
-border-right-width: 0px;
-border-top-width: 0px;
-border-left-width: 0px;
-transition-duration: 0.4s;
-cursor: pointer;
-border-radius: 8px;
-}
-.btn:hover {
-background-color: #0058b1;
-}
-.btn-web {
-background-color: #076300;
-}
-.btn-web:hover {
-background-color: #18891b;
-}
-.btn-toolbox {
-background-color: #ae2301;
-}
-.btn-toolbox:hover {
-background-color: #d42a01;
-}
-</style>
+<title>PS4 9.00 FW Host v2.5 by GamerHack</title>
+<link rel="stylesheet" href="style.css">
 <script src="int64.js"></script>
 <script src="rop.js"></script>
 <script src="kexploit.js"></script>
@@ -63,25 +12,23 @@ background-color: #d42a01;
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
-<h1 id="msgs">PS4 9.00 FW Host v1.1 by GamerHack - ESP8266 port by Cellie</h1>
+<h1 id="msgs">PS4 9.00 FW Host v2.5 by GamerHack</h1>
 <hr>
 <br>
-<h1 style="font-size:20px;color:yellow;">Main Payloads</h1>
-<button class="btn" onclick=load_goldhen2b()> GoldHEN 2.0b </button>
-<button class="btn" onclick=load_goldhen2b2()> GoldHEN 2.0b2 </button>
+<h1 style="font-size:18px;color:yellow;">Main Payloads</h1>
+<button class="btn" onclick=load_goldhen211()> GoldHEN v2.1.1 </button>
 <button class="btn" onclick=load_binloader()> Bin Loader </button>
 <br>
-<h1 style="font-size:20px;text-align:center;">Payloads</h1>
+<h1 style="font-size:18px;text-align:center;">Payloads</h1>
 <button class="btn" onclick=load_todex()> ToDex </button>
 <button class="btn" onclick=load_dumper()> App-Dumper </button>
 <button class="btn" onclick=load_ftp()> FTP </button>
 <button class="btn" onclick=load_app2usb()> App2USB </button>
-<br>
 <button class="btn" onclick=load_dbackup()> DB Backup </button>
 <button class="btn" onclick=load_dbrestore()> DB Restore </button>
+<br>
 <button class="btn" onclick=load_enablebUpdates()> Enable Updates </button>
 <button class="btn" onclick=load_disableUpdates()> Disable Updates </button>
-<br>
 <button class="btn" onclick=load_historyBlocker()> History Blocker </button>
 <button class="btn" onclick=load_kernelDump()> Kernel Dumper </button>
 <button class="btn" onclick=load_moduleDump()> Module Dumper </button>
@@ -91,14 +38,14 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <button class="btn" onclick=load_exitidu()> Exit IDU </button>
 <button class="btn" onclick=load_rifRen()> RIF Renamer </button>
 <button class="btn" onclick=load_permUart()> Permanent UART </button>
-<br>
-<button class="btn" onclick=load_webrte() style="margin-left: 75px;"> WebRTE </button>
+<button class="btn" onclick=load_webrte()> WebRTE </button>
 <a href="http://ps4trainer.com/Trainer/index.html"><button class="btn btn-web"> PS4 Trainer Web </button></a>
-<button class="btn btn-toolbox" onclick=load_toolbox()> Orbis-Toolbox </button>
-<button class="btn" onclick=load_fanthreshold()> Fan Threshold </button><select id="tempC"></select>&#176;C
 <br>
-<hr style="margin-top: 86px;">
-<h1 style="margin-top: 15px; color: yellow;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color:#f31414; margin-left: 15px;">@sleirsgoevy</a><a style="color:white; margin-left: 15px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color:#f31414; margin-left: 15px;">@SpecterDev</a><a style="color:white; margin-left: 15px;">SiSTR0</a><a href="https://twitter.com/Znullptr" style="color:#f31414; margin-left: 15px;">@Znullptr</a><a style="color:white; margin-left: 15px;">And Many More Developers ...</a></h1>
+<a href="webactivator.html"><button class="btn" style="margin-left: 77px;"> Web-Activator </button></a>
+<button class="btn btn-toolbox" onclick=load_toolbox()> Orbis-Toolbox </button>
+<button class="btn" onclick=load_fanthreshold() style="margin-right: 8px;"> Fan Threshold </button><select id="tempC"></select>&#176;C
+<br>
+<h1 style="margin-top: 55px;color: yellow;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color:#f31414; margin-left: 15px;">@sleirsgoevy</a><a style="color:white; margin-left: 15px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color:#f31414; margin-left: 15px;">@SpecterDev</a><a style="color:white; margin-left: 15px;">SiSTR0</a><a href="https://twitter.com/Znullptr" style="color:#f31414; margin-left: 15px;">@Znullptr</a><a style="color:white; margin-left: 15px;">And Many More Developers ...</a></h1>
 <script>
 for(var i=40; i<=79; i++){
     var select = document.getElementById("tempC");
@@ -110,188 +57,147 @@ for(var i=40; i<=79; i++){
 tempC.value=60;
 </script>
 <script>
-function allset(){
-setTimeout(location.reload,1000);
-alert("Payload Loaded... You will get a Memory Error, Press OK after that");
-msgs.innerHTML= LoadedMSG;
-}
-
-function awaitpl(){
-setTimeout(location.reload,1000);
-alert("Jailbreak Loaded... Now Send a Payload using the PS4 IP and port 9020");
-msgs.innerHTML="Wait a Moment...";
-}
-
-function load_goldhen2b(){
-var script = document.createElement('script');script.src = "goldhen_2.0b.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + GoldHEN v2.0b... Please Wait !!!";
-LoadedMSG="GoldHEN v2.0b Loaded...";
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_goldhen2b2(){
-var script = document.createElement('script');script.src = "goldhen_2.0b2.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + GoldHEN v2.0b2... Please Wait !!!";
-LoadedMSG="GoldHEN v2.0b2 Loaded...";
+function load_goldhen211(){
+var script = document.createElement('script');script.src = "goldhen_2.1.1.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading GoldHEN v2.1.1... Please Wait !!!";
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_binloader(){
-msgs.innerHTML="Loading Jailbreak + Bin Loader... Please Wait !!!";
+msgs.innerHTML="Launching Bin Loader... Please Wait !!!";
 run_jb = "binloader";
 setTimeout(poc,1500);
 }
 
 function load_todex(){
 var script = document.createElement('script');script.src = "todex.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + ToDex... Please Wait !!!"
-LoadedMSG="ToDex Loaded...";
+msgs.innerHTML="Loading ToDex... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_dumper(){
 var script = document.createElement('script');script.src = "dumper.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + App-Dumper... Please Wait !!!"
-LoadedMSG="App-Dumper Loaded...";
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_ftp(){
 var script = document.createElement('script');script.src = "ftp.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + FTP... Please Wait !!!"
-LoadedMSG="FTP Loaded...";
+msgs.innerHTML="Loading FTP... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_app2usb(){
 var script = document.createElement('script');script.src = "app2usb.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + App2USB... Please Wait !!!"
-LoadedMSG="App2USB Loaded...";
+msgs.innerHTML="Loading App2USB... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_dbackup(){
 var script = document.createElement('script');script.src = "backup.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + DB Backup... Please Wait !!!"
-LoadedMSG="DB Backup Loaded...";
+msgs.innerHTML="Loading DB Backup... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_dbrestore(){
 var script = document.createElement('script');script.src = "restore.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + DB Restore... Please Wait !!!"
-LoadedMSG="DB Restore Loaded...";
+msgs.innerHTML="Loading DB Restore... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_enablebUpdates(){
 var script = document.createElement('script');script.src = "enable-updates.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Enable Updates... Please Wait !!!"
-LoadedMSG="Enable Updates Loaded...";
+msgs.innerHTML="Loading Enable Updates... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_disableUpdates(){
 var script = document.createElement('script');script.src = "disable-updates.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Disable Updates... Please Wait !!!"
-LoadedMSG="Disable Updates Loaded...";
+msgs.innerHTML="Loading Disable Updates... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_historyBlocker(){
 var script = document.createElement('script');script.src = "history-blocker.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + History Blocker... Please Wait !!!"
-LoadedMSG="History Blocker Loaded...";
+msgs.innerHTML="Loading History Blocker... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_kernelDump(){
 var script = document.createElement('script');script.src = "kernel-dumper.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Kernel Dumper... Please Wait !!!"
-LoadedMSG="Kernel Dumper Loaded...";
+msgs.innerHTML="Loading Kernel Dumper... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_moduleDump(){
 var script = document.createElement('script');script.src = "module-dumper.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Module Dumper... Please Wait !!!"
-LoadedMSG="Module Dumper Loaded...";
+msgs.innerHTML="Loading Module Dumper... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_ps4debug(){
 var script = document.createElement('script');script.src = "ps4debug.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + PS4 Debug... Please Wait !!!"
-LoadedMSG="PS4 Debug Loaded...";
+msgs.innerHTML="Loading PS4 Debug... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_disbAslr(){
 var script = document.createElement('script');script.src = "disable-aslr.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Disable ASLR... Please Wait !!!"
-LoadedMSG="Disable ASLR Loaded...";
+msgs.innerHTML="Loading Disable ASLR... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_exitidu(){
 var script = document.createElement('script');script.src = "exit-idu.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Exit IDU... Please Wait !!!"
-LoadedMSG="Exit IDU Loaded...";
+msgs.innerHTML="Loading Exit IDU... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_rifRen(){
 var script = document.createElement('script');script.src = "rif-renamer.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + RIF Renamer... Please Wait !!!"
-LoadedMSG="RIF Renamer Loaded...";
+msgs.innerHTML="Loading RIF Renamer... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_permUart(){
 var script = document.createElement('script');script.src = "permanent-uart.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Permanent UART... Please Wait !!!"
-LoadedMSG="Permanent UART Loaded...";
+msgs.innerHTML="Loading Permanent UART... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_webrte(){
 var script = document.createElement('script');script.src = "webrte.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + WebRTE... Please Wait !!!"
-LoadedMSG="WebRTE Loaded...";
+msgs.innerHTML="Loading WebRTE... Please Wait !!!"
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_toolbox(){
+var script = document.createElement('script');script.src = "Orbis-Toolbox-900.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading Orbis-Toolbox... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
 
 function load_fanthreshold(){
 var script = document.createElement('script');script.src = "fan-threshold.js";localStorage.setItem('fanthreshold', tempC.value);document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Fan Threshold... Please Wait !!!"
-LoadedMSG="Fan Threshold Loaded...";
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_toolbox(){
-var script = document.createElement('script');script.src = "orbis-toolbox.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Orbis-Toolbox... Please Wait !!!"
-LoadedMSG="Orbis-Toolbox Loaded...";
+msgs.innerHTML="Loading Fan Threshold... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }

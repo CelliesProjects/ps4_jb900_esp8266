@@ -1,6 +1,6 @@
-CACHE MANIFEST
+CACHE MANIFEST 
 
-CACHE:
+CACHE: 
 app2usb.js
 backup.js
 disable-aslr.js
@@ -8,22 +8,31 @@ disable-updates.js
 dumper.js
 enable-updates.js
 exit-idu.js
+exploit.js
 fan-threshold.js
+frontend.js
 ftp.js
-goldhen_2.0b.js
-goldhen_2.0b2.js
+goldhen_2.1.1.js
 history-blocker.js
 index.html
 int64.js
 kernel-dumper.js
 kexploit.js
+malloc.js
 module-dumper.js
-orbis-toolbox.js
+Orbis-Toolbox-900.js
+netcat.js
+payload.js
 permanent-uart.js
 ps4debug.js
+relocator.js
 restore.js
 rif-renamer.js
 rop.js
+rop2.js
+style.css
+syscalls.js
+syscalls2.js
 todex.js
 webkit.js
 webrte.js
