@@ -1,5 +1,5 @@
-# ps4_jb900_esp8266
-Jailbreak PS4 FW9.00 for ESP8266
+# Jailbreak PS4 FW9.00 for ESP8266
+
 
 This is a local copy of https://github.com/GamerHack/ps4jb900v2 hosted on a ESP8266 to jailbreak your PS4 without needing an internet connection.
 
