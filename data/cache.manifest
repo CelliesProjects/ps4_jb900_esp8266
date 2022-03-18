@@ -1,6 +1,6 @@
-CACHE MANIFEST 
+CACHE MANIFEST
 
-CACHE: 
+CACHE:
 app2usb.js
 backup.js
 disable-aslr.js
@@ -12,7 +12,7 @@ exploit.js
 fan-threshold.js
 frontend.js
 ftp.js
-goldhen_2.1.1.js
+goldhen_2.2.js
 history-blocker.js
 index.html
 int64.js
@@ -36,3 +36,7 @@ syscalls2.js
 todex.js
 webkit.js
 webrte.js
+
+NETWORK:
+*
+

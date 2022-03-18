@@ -1,12 +1,13 @@
 # Jailbreak PS4 FW9.00 for ESP8266
 
+This is a trimmed down copy of [GamerHack/ps4jb900v2](https://github.com/GamerHack/ps4jb900v2) hosted on a ESP8266 to jailbreak your PS4 without needing an internet connection.
 
-This is a local copy of https://github.com/GamerHack/ps4jb900v2 hosted on a ESP8266 to jailbreak your PS4 without needing an internet connection.
+### Versions
 
-### Changes
-
+- 1.0.0 - First release.
 - 1.0.1 - Payloads are updated to commit [886f4a0](https://github.com/ChendoChap/pOOBs4/commit/886f4a07d0793ea6ee945ba064c6056e3af0231c) from https://github.com/ChendoChap/pOOBs4
 - 1.0.2 - GoldHEN updated to 2.1.1. from https://github.com/GamerHack/ps4jb900v2
+- 1.0.3 - GoldHEN updated to 2.2. which includes the [GoldHEN Cheat Menu](https://github.com/GoldHEN/GoldHEN_Cheat_Repository). Cheat codes are not included and have to be downloaded from https://github.com/GoldHEN/GoldHEN_Cheat_Repository.
 
 ### You will need
 
@@ -21,10 +22,9 @@ This is a local copy of https://github.com/GamerHack/ps4jb900v2 hosted on a ESP8
 2.  Open `ps4_jb900_esp8266.ino` in the Arduino IDE.
 3.  Use `Tools -> ESP8266 Sketch Data Upload` to upload the data files to your esp8266.
 4.  Flash the sketch to your ESP8266.
-5.  Connect the PS4 to the `ESP8266 PS4 9.00 jailbreak` WiFi access point.
+5.  Turn on and connect your PS4 to the `ESP8266 PS4 9.00 jailbreak` WiFi access point.
 5.  Browse to `192.168.4.1` and follow the on-screen intructions.
 
-Initial loading will take quite some time.
-
 ### Credits go to
+
 theflow, ChendoChap, Specter, Znullptr, sleirsgoevy and GamerHack (and a lot of others!)
